@@ -93,13 +93,26 @@ public class Metodus {
     
     public static void Szokoev(int a, int b) //5.feladat
     {
-        int i;
-        for(i=a+1;i<b;i++)
-        if(i%4==0&&i%100!=0)
-                System.out.println(i);
-        if(i%100==0)
-            System.out.println(i);
-    }
+        int i = 0;
+        int j;
+        int év=0;
+        if(a<b){
+            for(i=a+1;i<b;i++){
+                if(i%4==0&&i%100!=0||i%400==0)
+                    év++;
+                    System.out.println("Ezek/Ez az évszámok/évszám: "+i+" És összesen ennyi év volt: "+év);}}
+        if(a>b)
+            {
+            for(j=b+1;j<a;j++){
+                if(j%4==0&&j%100!=0||j%400==0)
+                    év++;
+                    System.out.println(j+" "+év);}}
+            
+                    
+        
+            }
+        
+        
     
     public static String Jegy(int a) //6.feladat
     {
@@ -211,6 +224,7 @@ public class Metodus {
             
     }
     
+    
     public static void Kobszamok()
     {
       int szam2=0;
@@ -252,7 +266,7 @@ public class Metodus {
         Max(-6,4,0);
         System.out.println(Sorrend(1,2,3,-4));
         System.out.println("Ebből a 3 oldalból szerkeszthető háromszög:"+Haromszog(1,2,4));
-        Szokoev(2000,2005);
+        Szokoev(2005,2000);
         System.out.println(Jegy(7));
         System.out.println(Osztas(12,4));
         System.out.println(Prim(5));
