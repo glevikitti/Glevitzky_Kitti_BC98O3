@@ -19,11 +19,11 @@ public class Teszt {
             System.out.println(le.getX()+" "+le.getY());
         else System.out.println("The Equation has no solution");
         
-        if(le.isSolvable()==true)
+        if(le1.isSolvable()==true)
             System.out.println(le1.getX()+" "+le1.getY());
         else System.out.println("The Equation has no solution");
         
-        if(le.isSolvable()==true)
+        if(le2.isSolvable()==true)
             System.out.println(le2.getX()+" "+le2.getY());
         else System.out.println("The Equation has no solution");
         
