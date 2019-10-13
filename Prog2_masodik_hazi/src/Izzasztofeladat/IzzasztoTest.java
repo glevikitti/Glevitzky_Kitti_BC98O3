@@ -20,14 +20,14 @@ public class IzzasztoTest {
                     if(t[i].getNev().compareTo(t[j].getNev())>1){
                         Izzaszto tmp=t[i];
                         t[i]=t[j];
-                        tmp=t[j];
+                        t[j]=tmp;
                     }
                 else 
                         if(t[i].getHom()<t[j].getHom())
                     {
                         Izzaszto tmp=t[i];
                         t[i]=t[j];
-                        tmp=t[j];
+                        t[j]=tmp;
                     }
                 
             }
@@ -44,11 +44,13 @@ public class IzzasztoTest {
         String[] elso = sc.nextLine().split(" ");
         int db = Integer.parseInt(elso[0]);
         String keresendo = elso[1];
-        Izzaszto[] tomb = new Izzaszto[db];
+        tomb = new Izzaszto[db];
         for (int i = 0; i < tomb.length; i++) {
             String[] tobbi = sc.nextLine().split(":");
             tomb[i] = new Izzaszto(tobbi[0], Integer.parseInt(tobbi[1]));
         }
+        
+        rendez(tomb);
         
         int index = -1;
         for (int i = 0; i < tomb.length; i++) {
@@ -68,7 +70,5 @@ public class IzzasztoTest {
             System.out.println("Missing data");
         }
         
-        rendez(tomb);
-        kiir(tomb);
     }
 }

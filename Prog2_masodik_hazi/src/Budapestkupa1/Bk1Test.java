@@ -57,15 +57,14 @@ public class Bk1Test {
                     }
             }
     
-    }            
+    }
+    
+    static void kiir(Bk1 [] b)
+    {
+        for(int i=0;i<b.length;i++)
+            System.out.println(b[i]);
+    }
                 
-            static void kiir(Bk1 t[])
-            {
-                for(int i=0;i<t.length;i++)
-        {
-            System.out.println(t[i].toString());
-        }
-            }
     
     
     public static void main(String[] args) {
@@ -88,6 +87,9 @@ public class Bk1Test {
             String [] tmp=sor.split(";");
             tomb[i]=new Bk1(Integer.parseInt(tmp[0]),Integer.parseInt(tmp[1]),Integer.parseInt(tmp[2]),tmp[3],Integer.parseInt(tmp[4]));
         }
+        
+        rendez(tomb);
+        kiir(tomb);
     }
     
 }

@@ -33,10 +33,11 @@ public class Main {
         
         Orarend aktualis = new Orarend(oranap);
         for(int i=0;i<oraterv.length;i++){
-            aktualis.oratHozzaad(oraterv[i]);
-            if (aktualis.oratHozzaad(oraterv[i])==true)
+            
+            if (aktualis.oratHozzaad(oraterv[i])==true) 
                 System.out.println("sikeres volt");
             else System.out.println("nem volt sikeres");}
     }
     
 }
+
